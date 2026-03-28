@@ -9,7 +9,7 @@
 - My Process
 
 - Built with
-  Hmtl
+  Html
   CSS
   Javascript
 

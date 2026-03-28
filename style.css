@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('assets/fonts/Ubuntu-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('assets/fonts/Ubuntu-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('assets/fonts/Ubuntu-Bold.ttf');
+    font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #9699aa;
+  --color-orange: #ffaf7e;
+  --color-red500: #ee374a;
+  --color-red450: #e96170;
+  --color-red400: #f9818e;
+  --color-purple600: #483eff;
+  --color-purple500: #6259ff;
+  --color-purple400: #928cff;
+  --color-purple200: #d6d9e6;
+  --color-blue900: #022959;
+  --color-blue700: #164a8a;
+  --color-blue300: #abbcff;
+  --color-blue200: #bee2fd;
+  --color-blue100: #eff5ff;
+  --color-blue50: #f8f9ff;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--color-blue100);
+  color: var(--color-blue900);
+  font-size: 1rem;
+}
