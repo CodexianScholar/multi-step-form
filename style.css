@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('assets/fonts/Ubuntu-Regular.ttf');
-    font-weight: 400;
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
 }
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('assets/fonts/Ubuntu-Medium.ttf');
-    font-weight: 500;
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('assets/fonts/Ubuntu-Bold.ttf');
-    font-weight: 700;
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
 }
 *,
 *::before,
@@ -53,4 +53,35 @@ body {
   background-color: var(--color-blue100);
   color: var(--color-blue900);
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.msf--card {
+  width: min(100%, 1000px);
+  height: min(90svh, 700px); /* Small viewport height  SVh ,*/
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  overflow: hidden;
+}
+
+.msf--sidebar {
+  background-image: url("assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.msf--panel {
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the btn group to the bottom */
 }

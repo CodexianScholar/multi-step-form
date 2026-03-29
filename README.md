@@ -22,3 +22,8 @@
 - Learned about `svh` (small viewport height) — a newer CSS unit that always
   refers to the smallest possible viewport size, solving the mobile browser
   address bar problem that `vh` has.
+
+- Learned that `border-radius` rounds all four corners. When an element sits 
+  flush inside a parent with rounded corners, use `border-top-left-radius` and 
+  `border-bottom-left-radius` to only round the corners that align with the 
+  parent — avoiding unwanted rounded edges on internal borders.
