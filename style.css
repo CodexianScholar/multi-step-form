@@ -40,7 +40,7 @@ textarea {
   --color-purple500: #6259ff;
   --color-purple400: #928cff;
   --color-purple200: #d6d9e6;
-  --color-blue900: #022959;
+  --color-blue950: #022959;
   --color-blue700: #164a8a;
   --color-blue300: #abbcff;
   --color-blue200: #bee2fd;
@@ -87,27 +87,41 @@ body {
 }
 
 .msf--form-step {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
+.msf--form-step p {
+  color: var(--color-grey);
+}
+
+.msf--form-step h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-blue950);
 }
 
 .msf--input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
 }
 
+label {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
 input {
-    padding: 0.75rem;
-    border: 1px solid var(--color-purple200);
-    border-radius: 0.5rem;
-    outline: none;
-    cursor: pointer;
+  padding: 0.75rem;
+  border: 1px solid var(--color-purple200);
+  border-radius: 0.5rem;
+  outline: none;
+  cursor: pointer;
 }
 
 input:focus {
-    border-color: var(--color-purple600);
+  border-color: var(--color-purple600);
 }
