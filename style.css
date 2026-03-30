@@ -88,6 +88,12 @@ body {
   gap: 1rem;
 }
 
+.msf--step-indicator.active .msf--step-circle {
+  background-color: var(--color-blue200);
+  color: var(--color-blue900);
+  border-color: var(--color-blue200);
+}
+
 .msf--step-circle {
   width: 2rem;
   height: 2rem;
