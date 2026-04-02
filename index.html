@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-step-form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="msf--card">
+      <div class="msf--sidebar">
+        <div class="msf--step-indicator" data-step="1">
+          <div class="msf--step-circle">1</div>
+          <div class="msf--step-label">
+            <span>STEP 1</span>
+            <span>YOUR INFO</span>
+          </div>
+        </div>
+        <div class="msf--step-indicator" data-step="2">
+          <div class="msf--step-circle">2</div>
+          <div class="msf--step-label">
+            <span>STEP 2</span>
+            <span>SELECT PLAN</span>
+          </div>
+        </div>
+        <div class="msf--step-indicator" data-step="3">
+          <div class="msf--step-circle">3</div>
+          <div class="msf--step-label">
+            <span>STEP 3</span>
+            <span>ADD-ONS</span>
+          </div>
+        </div>
+        <div class="msf--step-indicator" data-step="4">
+          <div class="msf--step-circle">4</div>
+          <div class="msf--step-label">
+            <span>STEP 4</span>
+            <span>SUMMARY</span>
+          </div>
+        </div>
+      </div>
+      <div class="msf--panel">
+        <!-- Step 1 your info -->
+        <div class="msf--form-step" data-step="1">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address and phone number.</p>
+          <div class="msf--input-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Stephen king"
+            />
+          </div>
+          <div class="msf--input-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="e.g. stephenking@lorem.com"
+            />
+          </div>
+          <div class="msf--input-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="e.g. +1 234 567 890"
+            />
+          </div>
+        </div>
+        <!-- Step 2 Select Plan -->
+        <div class="msf--form-step" data-step="2"></div>
+        <!-- Step 3 Add-ons -->
+        <div class="msf--form-step" data-step="3"></div>
+        <!-- Step 4 Summary -->
+        <div class="msf--form-step" data-step="4"></div>
+        <!-- Confirmation Panel -->
+        <div class="msf--form-step" data-step="5"></div>
+        <div class="msf--btn-group">
+          <button class="btn-next">Next Step</button>
+          <button class="btn-back">Go Back</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

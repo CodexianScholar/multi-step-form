@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #9699aa;
+  --color-orange: #ffaf7e;
+  --color-red500: #ee374a;
+  --color-red450: #e96170;
+  --color-red400: #f9818e;
+  --color-purple600: #483eff;
+  --color-purple500: #6259ff;
+  --color-purple400: #928cff;
+  --color-purple200: #d6d9e6;
+  --color-blue950: #022959;
+  --color-blue700: #164a8a;
+  --color-blue300: #abbcff;
+  --color-blue200: #bee2fd;
+  --color-blue100: #eff5ff;
+  --color-blue50: #f8f9ff;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--color-blue100);
+  color: var(--color-blue900);
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.msf--card {
+  width: min(100%, 1000px);
+  height: min(90svh, 700px); /* Small viewport height  SVh ,*/
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-white);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  overflow: hidden;
+}
+
+.msf--sidebar {
+  background-image: url("assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.msf--step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.msf--step-indicator.active .msf--step-circle {
+  background-color: var(--color-blue200);
+  color: var(--color-blue950);
+  border-color: var(--color-blue200);
+}
+
+.msf--step-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.msf--step-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.msf--step-label span:first-child {
+  font-size: 0.75rem;
+  color: var(--color-blue300);
+  letter-spacing: 0.1em;
+}
+
+.msf--step-label span:last-child {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.msf--panel {
+  padding: 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes the btn group to the bottom */
+}
+
+.msf--form-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.msf--form-step p {
+  color: var(--color-grey);
+}
+
+.msf--form-step h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-blue950);
+}
+
+.msf--input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+input {
+  padding: 0.75rem;
+  border: 1px solid var(--color-purple200);
+  border-radius: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+input:focus {
+  border-color: var(--color-purple600);
+}
