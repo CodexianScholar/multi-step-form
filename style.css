@@ -90,7 +90,7 @@ body {
 
 .msf--step-indicator.active .msf--step-circle {
   background-color: var(--color-blue200);
-  color: var(--color-blue900);
+  color: var(--color-blue950);
   border-color: var(--color-blue200);
 }
 
@@ -125,7 +125,6 @@ body {
   color: var(--color-white);
 }
 
-
 .msf--panel {
   padding: 4rem 2rem 2rem;
   display: flex;
@@ -154,6 +153,10 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   position: relative;
+}
+
+.hidden {
+  display: none;
 }
 
 label {
